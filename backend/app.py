@@ -636,6 +636,6 @@ def generate_avatar_url():
 
     return jsonify({"url": public_url}), 200
 
-if __name__ == '__main__':
-   # Run on port 5000 to match vite.config.ts proxy
-   app.run(host='0.0.0.0', port=5002, debug=True, use_reloader=False)
+# if __name__ == '__main__':
+#    # Run on port 5000 to match vite.config.ts proxy
+#    app.run(host='0.0.0.0', port=5002, debug=True, use_reloader=False)
