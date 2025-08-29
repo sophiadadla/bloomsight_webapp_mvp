@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/",
+  base: process.env.TZvite_base_path || "/bloomsight_webapp_mvp",
   server: {
     proxy: {
       "/algae-data": {
