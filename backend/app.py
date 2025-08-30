@@ -608,9 +608,8 @@ def generate_avatar_url():
 
     return jsonify({"url": public_url}), 200
 
-# For Vercel deployment
-def handler(request, context):
-    return app(request, context)
+# For Vercel deployment - this is the correct way
+# Remove the handler function and just export the app directly
 
 # For local development
 if __name__ == '__main__':
